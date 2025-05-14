@@ -30,6 +30,7 @@ function processImage() {
     ).then(({ data: { text } }) => {
       loading.style.display = 'none';
       resultBox.textContent = text;
+       console.log("OCR Text:", text); 
 
       // Mock AI Health Check
       if (i/sugar|paraben|preservative|salt|oil/i.test(text)) {
